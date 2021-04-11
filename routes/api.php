@@ -17,4 +17,10 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-// Route::get('auth_user',);
+
+
+// Route::get('auth_user','Api\User\LoginController@');
+
+Route::prefix('vi')->group(function () {
+    Route::get('auth_user',);
+});
