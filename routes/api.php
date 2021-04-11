@@ -21,6 +21,6 @@ use Illuminate\Http\Request;
 
 // Route::get('auth_user','Api\User\LoginController@');
 
-Route::prefix('vi')->group(function () {
-    Route::get('auth_user',);
+Route::prefix('v1')->group(function () {
+    Route::get('get_user','Api\User\IndexController@getUser');
 });
