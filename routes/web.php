@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('image/{$image_path}','Api\User\IndexController@imagePath');

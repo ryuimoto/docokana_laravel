@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=0; $i < 10; $i++) { 
+        for ($i=0; $i < 5; $i++) { 
             $name = 'ryuimoto';
             $email = 'test';
 
@@ -19,6 +19,7 @@ class UsersTableSeeder extends Seeder
                 'name' => "$name",
                 'email' => "$email$i@gmail.com",
                 'password' => bcrypt('qqq111'),
+                'image_path' => "$email$i.jpeg",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
             ]);
