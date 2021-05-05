@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('image/{$image_path}','Api\User\IndexController@imagePath');
+// Route::get('image/{$image_path}','Api\User\Auth\IndexController@imagePath');
+Route::get('image/{image_path}',function(){
+    return 32453534;
+});
